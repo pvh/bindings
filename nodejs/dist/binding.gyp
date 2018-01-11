@@ -37,7 +37,8 @@
         }],
         ['OS=="win"', {
           'cflags_cc': [ '/DUSE_LIBUV' ],
-          'cflags_cc!': []
+          'cflags_cc!': [],
+          'libraries': ['libeay32.lib', 'ssleay32.lib']
         }]
        ]
     },
